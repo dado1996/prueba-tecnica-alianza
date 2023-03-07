@@ -73,17 +73,20 @@ const GifsContainer = () => {
         imgInfo={currentImage}
       />
       <Flex direction="column" width="100vw" padding="1rem">
-        <Flex justifyContent="space-around" gap="2.5rem">
+        <Flex justifyContent="space-around" gap="1.5rem">
           <Input
             type="text"
             id="search"
             placeholder="Search..."
             onChange={(txt) => setSearchQuery(txt.target.value)}
+            background="white"
           />
 
           <Select
             placeholder="Seleccione la cantidad..."
             onChange={(event) => setImageQuantity(event.target.value)}
+            background="white"
+            maxWidth="100px"
           >
             <option value="5">5</option>
             <option value="10">10</option>
@@ -111,6 +114,9 @@ const GifsContainer = () => {
                 setCurrentImage(img);
               }}
               cursor="pointer"
+              border="1px solid"
+              borderColor="blackAlpha.100"
+              borderRadius="8px"
             />
           ))}
         </Grid>
