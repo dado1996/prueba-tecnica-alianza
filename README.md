@@ -1,6 +1,7 @@
 # Proyecto Consumo API's con React
+
 Proyecto para demostración de habilidades como construcción de una interfaz gráfica, consumo de API REST, código limpio, manejo de datos asíncronos, entre otros
----
+
 ## Instalación
 Fija las variables de entorno en un archivo `.env` de acuerdo con el archivo de ejemplo
 
