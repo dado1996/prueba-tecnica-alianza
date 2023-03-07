@@ -6,7 +6,13 @@ import useAuth from "./hooks/useAuth";
 function App() {
   const { auth } = useAuth();
   return (
-    <Flex justifyContent="center" direction="column" alignItems="center" background="#ccc">
+    <Flex
+      justifyContent="center"
+      direction="column"
+      alignItems="center"
+      background="#ccc"
+      height="100vh"
+    >
       <Text fontSize="24pt">Gif Displayer</Text>
       {auth ? <GifsContainer /> : <LoginForm />}
     </Flex>
